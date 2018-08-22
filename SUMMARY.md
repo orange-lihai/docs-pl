@@ -1,5 +1,4 @@
 * [简要说明和备注](default.md)
-
 * [R](R.md)
     * [快速入门](zero/start.md)
     * [数据类型](one/start.md)
