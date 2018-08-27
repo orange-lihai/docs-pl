@@ -1,11 +1,13 @@
 ###### Haskell 是什么 ?
 > 它不过是又一门编程语言而已. 不过它有一些特立独行的特征, 很值得程序员们学习和了解它. 
-> 
+> * 它是一门纯粹函数式编程语言(purely functional programming language)
+> * 它是惰性(lazy)的.
+> * 它是静态类型 (statically typed) 的.
 
 ###### 从哪里开始呢 ?
 * 首先, 当然是找到它的[官方站点](https://www.haskell.org/). 
-* 在[下载页](https://www.haskell.org/downloads) 下载 Haskell Platform 和 Stack 并安装它们.
-* 在Haskell Platform的安装目录(比如: C:\Program Files\Haskell Platform\7.10.2-a\bin)找到 ghci.exe 并运行它:
+* 在[下载页](https://www.haskell.org/downloads) 下载 Haskell Platform (包含了 Stack 和 Cabal) 并安装它们.
+* 在Haskell Platform的安装目录(比如: C:\Program Files\Haskell Platform\8.4.3\bin)找到 ghci.exe 并运行它:
 ~~~
 GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 Prelude> 1 + 1
