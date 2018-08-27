@@ -15,6 +15,7 @@ Prelude> "Hello, World!"
 Prelude>
 ~~~
 
-###### IDE 推荐
+###### 可能有用的推荐
 * 在 Windows 7+ 或者 OS X 平台上, 推荐 Intellij Idea + HaskForce 插件
 * 如果你在 Linux 或者 Unix 平台上工作, 我不相信你需要别人的推荐
+* 网络不好的话可以参考使用: [Hackage 源使用帮助](http://mirrors.ustc.edu.cn/help/hackage.html)
