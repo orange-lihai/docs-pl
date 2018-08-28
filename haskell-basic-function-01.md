@@ -24,12 +24,41 @@ doubleIf :: (Num a, Ord a) => a -> a
 doubleIf x = (if x > 100 then x + 1 else x * 2) + 1
 
 -- 没有参数的函数, 也可以把它看做 "常量定义"
+-- 这种情况下, 第一行声明一般不需要写. 因为 Haskell 有类型推导.
 str :: [Char]
 str = "String Constant ..."
 ~~~
 
 
-###### List 入门
+###### 常用数据结构 List
+~~~
+-- 一个空的 List
+listOfEmpty :: [a]
+listOfEmpty = []
+
+-- 一个 Integer 类型的 List
+listOfInt = [1,2,3]
+-- 或者像下面(实际上 [1,2,3] 只是 1:2:3:[] 的语法糖):
+listOfInt = 1:2:3:[]
+-- 所以, 可以用 : 符号在 list 的头部插入一个元素
+0:listOfInt
+-- 想在 list 尾部连接另外一个 list 可以用 ++ 运算符
+listOfInt ++ [7,8,9]
+
+-- 两个 List 可以比较大小
+
+-- 一个 Char 类型的 List, 其实就是一个 String 类型的值.
+-- 所以可以用操作 List 的所有函数操作 String
+-- 比如:
+hello = "Hello"
+Preload> :t hello
+hello :: [Char]
+Preload> 'A':hello
+"AHello"
+Preload> 
+~~~
+
+###### 常用数据结构 Tuple
 ~~~
 
 ~~~
