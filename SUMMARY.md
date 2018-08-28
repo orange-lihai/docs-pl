@@ -29,4 +29,5 @@
 * [Haskell](Haskell.md)
     * [基础入门](haskell-basic.md)
         * [简单介绍](haskell-basic-hello.md)
-        * [第一个函数](haskell-basic-function-01.md)
+        * [简单入门](haskell-basic-function-01.md)
+    * [GHC的扩展特征](haskell-ghc-ext.md)
