@@ -61,6 +61,11 @@ hello :: [Char]
 Preload> 'A':hello
 "AHello"
 Preload> 
+
+-- 列举一些操作 List 的常用函数()
+-- head , tail , last , init , length , null , reverse , take 
+-- maxinum , sum , elem 
+
 ~~~
 
 ###### 常用数据结构 Tuple
