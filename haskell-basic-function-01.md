@@ -99,3 +99,39 @@ Prelude>
 -- 列举一些操作或者生成 Tuple 的函数(看源码, 把它们自己实现一遍)
 -- fst , snd , zip , 
 ~~~
+
+###### 再看一些复杂的函数示例
+~~~
+-- 再看看之前的函数 doubleMe , 发现函数体只有一句话. 
+-- 那复杂的函数体怎么写呢 ?
+doubleMe :: (Num a) => a -> a
+doubleMe x = x + x
+
+-- 简单模式匹配
+sayHi :: String -> Integer    -- 函数声明
+sayHi "One" = 1               -- 如果收到 "One", 返回 1
+sayHi "Two" = 2               -- 如果收到 "Two", 返回 2
+sayHi "Three" = 3             -- 如果收到 "Three", 返回 3
+sayHi x = 99999               -- 如果收到 其它任何值, 返回 99999
+
+-- 模式匹配 和 递归
+-- len 函数接受一个 List 作为参数, 返回一个 Num 类型的值
+len :: (Num b) => [a] -> b     -- 函数声明
+len [] = 0                   -- 如果传入空, 返回 0
+len (x:xs) = 1 + len xs      -- 否则, 递归调用
+
+-- 看看一个快速排序怎么写
+quickSort :: (Ord a) => [a] -> [a]
+quickSort [] = []
+quickSort (x:xs) = quickSort [n | n <- xs, n < x] ++ [x] ++ quickSort [m | m <- xs, m >= x]
+-- 测试一下
+Prelude> quickSort [1,9,8,3,5,7]
+[1,3,5,7,8,9]
+~~~
+
+
+###### 用一个例子来小结一下
+~~~
+
+~~~
+
