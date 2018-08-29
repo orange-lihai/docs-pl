@@ -32,11 +32,11 @@ str = "String Constant ..."
 
 ###### 常用数据结构 List
 ~~~
--- 一个空的 List
+-- 创建一个空的 List
 listOfEmpty :: [a]
 listOfEmpty = []
 
--- 一个 Integer 类型的 List
+-- 创建一个 Integer 类型的 List
 listOfInt = [1,2,3]
 -- 或者像下面(实际上 [1,2,3] 只是 1:2:3:[] 的语法糖):
 listOfInt = 1:2:3:[]
@@ -46,6 +46,15 @@ listOfInt = 1:2:3:[]
 listOfInt ++ [7,8,9]
 -- 按下标索引取 List 中的元素, 下标从 0 开始
 listOfInt !! 1
+
+-- 还可以用 Range 创建一个 List
+[1..20]
+['A'..'Z']
+[2,4..30]
+
+-- 可以得到无限长的 List, 比如: [1..]
+-- 不要尝试运行它, 而是配合其它操作, 比如:
+take 10 [1..] 
 
 -- 如果 List 中的元素可以比较大小, 那么可以比较这些 List 的大小
 -- 首先比较第一个元素, 如果相等, 则比较它们的第二个元素, 依次类推
@@ -62,10 +71,10 @@ Preload> 'A':hello
 "AHello"
 Preload> 
 
--- 列举一些操作 List 的常用函数()
+-- 列举一些操作或者创建 List 的常用函数(看源码, 把它们自己实现一遍)
 -- head , tail , last , init , length , null , reverse , take 
 -- maxinum , sum , elem 
-
+-- cycle , repeat , replicate 
 ~~~
 
 ###### 常用数据结构 Tuple
