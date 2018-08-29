@@ -77,6 +77,15 @@ Preload>
 -- cycle , repeat , replicate 
 ~~~
 
+###### List Comprehension (列表推导式)
+~~~
+-- Haskell 的 List Comprehension 和数学上的集合定义非常相似
+-- 只需要一个例子就能明白
+Preload> [x * 2 | x <- [1..100], x >= 50, x < 60]
+[100,102,104,106,108,110,112,114,116,118]
+Preload>
+~~~
+
 ###### 常用数据结构 Tuple
 ~~~
 
