@@ -31,6 +31,7 @@ str = "String Constant ..."
 
 
 ###### 常用数据结构 List
+List 是非常常用的数据结构. 把它想象成一个容器, 它可以存储多个类型相同的元素.
 ~~~
 -- 创建一个空的 List
 listOfEmpty :: [a]
@@ -87,6 +88,14 @@ Preload>
 ~~~
 
 ###### 常用数据结构 Tuple
+Tupe 和 List 很像, 它也是能存入多个值的容器. 但是它存入的元素的数量是固定的, 不过这些元素的类型可以不相同.
 ~~~
+-- 创建一个 Tuple
+Prelude> let t = ("Peter", 30)
+Prelude> :t t
+t :: Num b => ([Char], b)
+Prelude>
 
+-- 列举一些操作或者生成 Tuple 的函数(看源码, 把它们自己实现一遍)
+-- fst , snd , zip , 
 ~~~
